@@ -1,0 +1,17 @@
+{% extends 'basic_app/base.html' %}
+{% block title %}
+
+    <title>Home</title>
+{% endblock %}
+{% block body %}
+
+    {% if user.is_authenticated %}
+       <h1>Welcome To Django Level Five</h1>
+       <h3>hello {{user}}</h3>
+    {% else %}
+        <h1>Hello World</h1>
+           
+    {% endif %}
+
+
+{% endblock %}   
